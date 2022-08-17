@@ -1,0 +1,26 @@
+CREATE DATABASE gps;
+USE gps;
+
+CREATE TABLE users
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50),
+    passwordd VARCHAR(50)
+);
+
+CREATE TABLE emp
+(
+    idEmp INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(40) NOT NULL,
+    apellidos VARCHAR(40) NOT NULL,
+    correo VARCHAR(40) NOT NULL,
+    telefono VARCHAR(40) NOT NULL,
+    puesto VARCHAR(40) NOT NULL,
+    edad INT NOT NULL,
+    sexo VARCHAR(30) NOT NULL,
+    sueldo VARCHAR(50) NOT NULL,
+    fechaIngreso DATE NOT NULL
+);
+
+INSERT INTO users (id, email, passwordd)
+VALUES (1,'admin@gps.com.mx','admingps1');
